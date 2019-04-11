@@ -13,13 +13,13 @@ library(shiny)
 shinyUI(fluidPage(
 
     # Application title
-    titlePanel("Normal Distribution"),
+    titlePanel("Create and Visulize Your Normal Distribution"),
 
     # Sidebar with a slider input for number of bins
     sidebarLayout(
         sidebarPanel(
             sliderInput("dist_data",
-                        "Number of bins:",
+                        "Number of data points:",
                         min = 1,
                         max = 1000,
                         value = 100), 
@@ -34,12 +34,21 @@ shinyUI(fluidPage(
                         min = 1,
                         max = 100,
                         value = 10,
-                        step = 1)
+                        step = 1),
+            checkboxInput("show_mean_line",
+                          "Show/Hide Mean Line",
+                          value = FALSE)
         ),
 
         # Show a plot of the generated distribution
         mainPanel(
-            plotOutput("distPlot")
+            tabsetPanel(type = "tabs",
+                        tabPanel("Your Chart", br(), plotOutput("distPlot")),
+                        tabPanel("Documentation", br(), textOutput("docomentation"))
+                        
+                        )
+            
+            #plotOutput("distPlot")
         )
     )
 ))
