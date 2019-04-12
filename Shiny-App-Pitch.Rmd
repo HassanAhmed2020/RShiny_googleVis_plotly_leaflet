@@ -1,0 +1,54 @@
+---
+title: "Shiny App Pitch"
+output:
+  ioslides_presentation: default
+  font-size: default
+---
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Creat & Visulize Normal Distribution
+
+Welcome to Normal Distribution Application: this shiny application will let you create and visulize your own normal distribution. You can pick number of sample data points by using the slider on the left pannel. You can also enter values for mean and standard deviation for your normal distribution. The Check Box will let you show or hide a line for mean of the distribution
+
+[Click Here to try the Shiny App](https://predictive-intelligence.shinyapps.io/Guassian_Distribution/ "Create and Visulize your Normal Distribution")
+
+
+
+## ui.R Inputs to the Application
+
+There are 4 inputs you can provide to the application:
+
+- Slider Input, using `sliderInput` to provide number of datapoints
+- Numeric Input 1, using `numericInput` to provide mean value for the distribution
+- Numeric Input 2, using `numericInput` to provide standard deviation for the distribution
+- CheckBox, using `checkboxInput` to show or hide a red line for Mean value
+
+
+## server.R outputs
+
+There are 2 outputs that our server.R provides. These outputs are diaplyed on two different tabs on our application output:
+
+- Docomentation, using `output$docomentation` we rendered all the text needed for the documentation tab of the application
+
+- Output Plot, using `output$distPlot` we rendered the plot for the output tab of the application. 
+
+
+
+## Application Output
+
+`server.r` will take all your inputs and create a datasets using `rnorm` function with normal distribution. It will use the mean and standard deviation values that you provided in `ui.r` input. The out put will look similiar to the chart given below:
+
+```{r }
+hist(rnorm(500), col = 'darkgray', border = 'white', xlab = "Value", main = "Normal Distribution" )
+abline(v=0,col="red", lwd = 10)
+```
+
+
+
+

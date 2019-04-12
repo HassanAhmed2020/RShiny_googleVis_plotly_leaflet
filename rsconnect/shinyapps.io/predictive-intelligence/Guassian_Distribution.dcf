@@ -1,0 +1,13 @@
+name: Guassian_Distribution
+title: Guassian_Distribution
+username:
+account: predictive-intelligence
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 860265
+bundleId: 2006058
+url: https://predictive-intelligence.shinyapps.io/Guassian_Distribution/
+when: 1555079151.71147
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: _config.yml|googleVis_Example.R|Leaflet_Rmarkdown.html|Leaflet_Rmarkdown.Rmd|leaflet_test.R|plotly_examples.R|plotly_RMD.html|Rmarkdown_Presentation.html|Rmarkdown_Presentation.Rmd
