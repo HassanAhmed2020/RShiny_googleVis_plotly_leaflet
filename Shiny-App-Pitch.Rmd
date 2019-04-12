@@ -12,9 +12,9 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Creat & Visulize Normal Distribution
+## Create & Visualize Normal Distribution
 
-Welcome to Normal Distribution Application: this shiny application will let you create and visulize your own normal distribution. You can pick number of sample data points by using the slider on the left pannel. You can also enter values for mean and standard deviation for your normal distribution. The Check Box will let you show or hide a line for mean of the distribution
+Welcome to Normal Distribution Application: this shiny application will let you create and visualize your own normal distribution. You can pick number of sample data points by using the slider on the left pannel. You can also enter values for mean and standard deviation for your normal distribution. The Check Box will let you show or hide a line for mean of the distribution
 
 [Click Here to try the Shiny App](https://predictive-intelligence.shinyapps.io/Guassian_Distribution/ "Create and Visulize your Normal Distribution")
 

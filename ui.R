@@ -13,7 +13,7 @@ library(shiny)
 shinyUI(fluidPage(
 
     # Application title
-    titlePanel("Create and Visulize Your Normal Distribution"),
+    titlePanel("Create and visualize Your Normal Distribution"),
 
     # Sidebar with a slider input for number of bins
     sidebarLayout(
