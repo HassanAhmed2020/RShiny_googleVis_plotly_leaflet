@@ -12,9 +12,12 @@ library(shiny)
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
 
-    my_docomentation <- " Hello There, this shiny application 
-                            will let you create your own normal distribution.
-                        You can pick data_points, "
+    my_docomentation <- " Welcome to Normal Distribution Application: this shiny application 
+                            will let you create and visulize your own normal distribution.
+                        You can pick number of sample data points by using the slider on the left pannel.
+                        You can also enter values for mean and standard deviation for your normal 
+                        distribution. The Check Box will let you show or hide a line for mean of the 
+                        distribution"
     output$docomentation <- renderText(my_docomentation)
     output$distPlot <- renderPlot({
 
